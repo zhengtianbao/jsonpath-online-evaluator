@@ -60,9 +60,7 @@ function JsonExpressions() {
             </tr>
           </tbody>
         </table>
-        <a href="https://goessner.net/articles/JsonPath/index.html#e2">
-          See: JSONPath expressions - https://goessner.net/
-        </a>
+
       </div>
     </div>
   );

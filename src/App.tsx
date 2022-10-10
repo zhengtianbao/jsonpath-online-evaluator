@@ -14,10 +14,10 @@ import "ace-builds/src-noconflict/ext-language_tools.js";
 import {Ace} from "ace-builds";
 
 declare var ace: { config: Ace.Config };
-ace.config.setModuleUrl(
-  "ace/mode/json_worker",
-  new URL('ace-builds/src-noconflict/worker-json.js', 'https://ajaxorg.github.io/').toString()
-);
+// ace.config.setModuleUrl(
+//   "ace/mode/json_worker",
+//   new URL('ace-builds/src-noconflict/worker-json.js', 'https://ajaxorg.github.io/').toString()
+// );
 
 function App() {
   const [inputJson, setInputJson] = useState(JSON.stringify(Sample, null, 4));
@@ -131,7 +131,7 @@ function App() {
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            Expand JSONPath expressions
+            帮助文档
           </button>
         </div>
       </div>
@@ -140,7 +140,7 @@ function App() {
 
       <div className="row row-cols-1 row-cols-md-2">
         <div className="col">
-          <h2>Inputs</h2>
+          <h2>源数据</h2>
           <AceEditor
             className="editor"
             mode="json"
@@ -154,7 +154,7 @@ function App() {
         </div>
 
         <div className="col">
-          <h2>Evaluation Results</h2>
+          <h2>解析结果</h2>
           <AceEditor
             mode="json"
             theme="solarized_dark"
